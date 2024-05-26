@@ -5,37 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>PyramidCalc</title>
 </head>
 
 <body>
     <main>
-        <h1>PyramidCalc</h1>
-        <div class="flex is_center">
-            <span>200</span>
+        <div class="main">
+            <h1>PyramidCalc</h1>
+            <div class="flex is_center">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+                <!-- <span><input type="number" name="" id="" min="0" max="300" step="10">200</span> -->
+            </div>
+            <div class="flex is_center">
+                <img src="img/arrowright.png" alt="右矢印">
+                <img src="img/arrowleft.png" alt="左矢印">
+            </div>
+            <div class="flex is_center">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+                <!-- <span>150</span> -->
+                <!-- <span>50</span> -->
+            </div>
+            <div id="first_stage" class="flex is_center">
+                <img src="img/arrowright.png" alt="右矢印">
+                <img src="img/arrowleft.png" alt="左矢印">
+                <img src="img/arrowright.png" alt="右矢印">
+                <img src="img/arrowleft.png" alt="左矢印">
+            </div>
+            <div class="flex is_center">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+                <!-- <span>130</span> -->
+                <!-- <span>20</span> -->
+                <!-- <span>30</span> -->
+            </div>
+            <!-- <div id="second_stage" class="flex is_center">
+                <img src="img/arrowright.png" alt="右矢印">
+                <img src="img/arrowleft.png" alt="左矢印">
+                <img src="img/arrowright.png" alt="右矢印">
+                <img src="img/arrowleft.png" alt="左矢印">
+                <img src="img/arrowright.png" alt="右矢印">
+                <img src="img/arrowleft.png" alt="左矢印">
+                <img src="img/arrowright.png" alt="右矢印">
+                <img src="img/arrowleft.png" alt="左矢印">
+            </div>
+            <div class="flex is_center">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+                <input type="number" name="input_number" id="" min="0" max="300" step="10">
+            </div> -->
+            <div>
+                <input type="button" value="Check" id="check" />
+                <input type="button" value="Reload" onclick="window.location.reload();" />
+            </div>
         </div>
-        <div class="flex is_center">
-            <img src="img/arrowright.png" alt="右矢印">
-            <img src="img/arrowleft.png" alt="右矢印">
-        </div>
-        <div class="flex is_center">
-            <span>150</span>
-            <span>50</span>
-        </div>
-        <div id="first_stage" class="flex is_center">
-            <img src="img/arrowright.png" alt="右矢印">
-            <img src="img/arrowleft.png" alt="左矢印">
-            <img src="img/arrowright.png" alt="右矢印">
-            <img src="img/arrowleft.png" alt="左矢印">
-        </div>
-        <div class="flex is_center">
-            <span>130</span>
-            <span>20</span>
-            <span>30</span>
-        </div>
-        <input type="button" value="Reload" onclick="window.location.reload();" />
     </main>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 </body>
 
 </html>
