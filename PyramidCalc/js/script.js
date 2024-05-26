@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const third_one_number = second_left_number - third_two_number;
     const third_three_number = second_right_number - third_two_number;
 
+    let flag = true;
+
     // const fourth_one_number = 0;
     // const fourth_two_number = 0;
     // const fourth_three_number = 0;
@@ -48,16 +50,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // span[3].innerHTML = third_one_number;
     // span[4].innerHTML = third_two_number;
     // span[5].innerHTML = third_three_number;
-
-    for (let i = 1; i < input_number.length; i++) {
-        // for (let i = 1; i < span.length; i++) {
-        if (Math.floor(Math.random() * 2)) {
-            // span[i].innerHTML = "　";
-            input_number[i].value = "";
-            input_number[i].style.backgroundColor = "#000";
-            input_number[i].style.color = "#fff";
-            // console.log(i);
-            input_number[i].style.pointerEvents = "auto";
+    for (; flag;) {
+        for (let i = 1; i < input_number.length; i++) {
+            // for (let i = 1; i < span.length; i++) {
+            if (Math.floor(Math.random() * 2)) {
+                // span[i].innerHTML = "　";
+                input_number[i].value = "";
+                input_number[i].style.backgroundColor = "#000";
+                input_number[i].style.color = "#fff";
+                // console.log(i);
+                input_number[i].style.pointerEvents = "auto";
+                flag = false;
+            }
         }
     }
 
